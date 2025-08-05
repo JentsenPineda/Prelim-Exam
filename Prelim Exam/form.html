@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Add Student Form</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+
+<body class="bg-gray-50">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm px-4">
+        <img src="https://tesdatrainingcourses.com/wp-content/uploads/2017/01/Dominican-College-of-Tarlac.png" alt="Dominican-College-of-Tarlac" width="50" height="60">
+        <a class="navbar-brand" href=''><strong>{Group No.}</strong></a>
+        <ul class="navbar-nav ms-auto">
+           
+            <li class="nav-item"><a class="nav-link" href='students.html'>Students</a></li>
+            <li class="nav-item"><a class="nav-link" href='attendance.html'>Attendance</a></li>
+            <li class="nav-item"><a class="nav-link" href='form.html'>Form</a></li>
+
+        </ul>
+        
+    </nav>
+
+  <div class="max-w-7xl mx-auto bg-white shadow-md mt-10 p-8 rounded">
+
+ 
+
+    <h2 class="text-2xl font-bold mb-6 text-center">Add Student Form</h2>
+
+ 
+
+    <form class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="col-span-1 flex flex-col items-center space-y-4">
+
+        <div class="w-40 h-40 bg-gray-200 rounded-full"></div>
+
+        <label class="block w-full text-center">
+
+          <input type="file" class="hidden" />
+
+          <div class="border border-red-400 text-red-500 px-4 py-2 rounded cursor-pointer">Choose File</div>
+
+          <p class="text-sm text-red-500 mt-1">No file chosen</p>
+
+        </label>
+
+      </div>
+
+      <div class="col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Last Name</label>
+
+          <input type="text" placeholder="ex. Juan" class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Required</p>
+
+        </div>
+
+
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">First Name</label>
+
+          <input type="text" placeholder="ex. Dela Cruz" class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Required</p>
+
+        </div>
+
+
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Middle Name</label>
+
+          <input type="text" placeholder="ex. Cruz" class="mt-1 block w-full border border-green-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-green-600 mt-1">Optional</p>
+
+        </div>
+
+ 
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Gender</label>
+
+          <div class="mt-2 flex space-x-4">
+
+            <label class="inline-flex items-center">
+
+              <input type="radio" name="gender" class="form-radio text-green-500" checked />
+
+              <span class="ml-2">Male</span>
+
+            </label>
+
+            <label class="inline-flex items-center">
+
+              <input type="radio" name="gender" class="form-radio text-green-500" />
+
+              <span class="ml-2">Female</span>
+
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Civil Status</label>
+
+          <select class="mt-1 block w-full border border-green-500 rounded px-3 py-2">
+
+            <option>Single</option>
+
+            <option>Married</option>
+
+            <option>Other</option>
+
+          </select>
+
+          <p class="text-xs text-green-600 mt-1">Valid</p>
+
+        </div>
+
+
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Date of Birth</label>
+
+          <input type="date" class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Required</p>
+
+        </div>
+
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Place of Birth</label>
+
+          <input type="text" placeholder="ex. Tarlac City" class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Required</p>
+
+        </div>
+
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Nationality</label>
+
+          <input type="text" placeholder="ex. Filipino" class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Required</p>
+
+        </div>
+
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Religion</label>
+
+          <input type="text" placeholder="ex. Roman Catholic" class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Required</p>
+
+        </div>
+
+
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Contact No.</label>
+
+          <input type="text" placeholder="09XXXXXXXXX" class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Invalid Pattern</p>
+
+        </div>
+
+
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Email</label>
+
+          <input type="email" placeholder="ex. JuanD@email.com" class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Required</p>
+
+        </div>
+
+ 
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Street</label>
+
+          <input type="text" placeholder="ex. 85th Subd." class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Required</p>
+
+        </div>
+
+ 
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Barangay</label>
+
+          <input type="text" placeholder="ex. Sto. Rosario" class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Required</p>
+
+        </div>
+
+ 
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">City</label>
+
+          <input type="text" placeholder="ex. Capas" class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Required</p>
+
+        </div>
+
+ 
+        <div>
+
+          <label class="block text-sm font-medium text-gray-700">Province</label>
+
+          <input type="text" placeholder="ex. Tarlac" class="mt-1 block w-full border border-red-500 rounded px-3 py-2" />
+
+          <p class="text-xs text-red-600 mt-1">Required</p>
+
+        </div>
+
+      </div>
+
+ 
+      <div class="col-span-3 flex justify-center mt-6">
+
+        <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Add Student</button>
+
+      </div>
+
+    </form>
+
+  </div>
+
+ 
+
+</body>
+
+</html>
